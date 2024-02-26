@@ -13,3 +13,13 @@ def calcular():
         root.title("Calculadora")
         
         label_num1 = tk.Label(root, text="Número 1:")
+        label_num1.grid(row=0, column=0, padx=5, pady=5)
+        
+        entry_num1 = tk.Entry(root)
+        entry_num1.grid(row=0, column=0, padx=5, pady=5)
+        
+        label_num2 = tk.Label(root, text="Numero 2:")
+        label_num2.grid(row=1, column=1, padx=5, pady=5)
+        
+        entry_num2 = tk.Entry(root)
+        entry_num2.grid(row=1, column=1, padx=5, pady=5)
