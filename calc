@@ -1,0 +1,26 @@
+function calculadora(){
+    const opera = prompt("Escolha sua operção")
+    const num1 = parseInt(prompt("De um numero : "));
+    const num2 = parseInt(prompt("De outro numero: "));
+
+    if ("soma" == opera){
+    const totalsoma = num1 + num2;
+    console.log(`A soma ${num1} + ${num2} = ${totalsoma}`);
+    }
+    else if("subtracao" == opera){
+    const totalsub = num1 - num2;
+    console.log(`A subtração ${num1} - ${num2} = ${totalsub}`);
+    }
+    else if("multiplicacao" == opera){
+    const totalmul = num1 * num2;
+    console.log (`A multiplição ${num1} x ${num2} = ${totalmul}`);
+    }
+    else if("divisao" == opera){
+    const totaldiv = num1 / num2;
+    console.log (`A divisão ${num1} / ${num2} = ${totaldiv}`);
+    }
+}
+
+calculadora();
+
+
