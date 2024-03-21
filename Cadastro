@@ -1,6 +1,7 @@
 def cadastrar_dados():
     nome = input("Digite o nome: ")
     endereco = input("Digite o endereço: ")
+    
     with open("dados.txt", "a") as arquivo:
         arquivo.write(f"{nome};{endereco}\n")
     print("Dados cadastro com sucesso!")
@@ -29,3 +30,16 @@ def main():
         print("3. Sair")
         
         opcao = input("Escola uma opção")
+        
+        if opcao == "1":
+            cadastrar_dados()
+        elif opcao == "2":
+            ler_dados()
+        elif opcao == "3":
+            print("Saindo...")
+            break
+        else:
+            print("Opção invalida. Por favor, escolha uma opção válida.")
+            
+if __name__ == "__main__":
+    main()
